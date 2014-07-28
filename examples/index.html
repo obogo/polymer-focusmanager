@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="bower_components/platform/platform.js"></script>
+    <script src="elements/consts.js"></script>
+    <script src="elements/utils.js"></script>
+    <script src="elements/services/dispatcher.js"></script>
+    <script src="elements/services/keyboard.js"></script>
+    <script src="elements/services/manager.js"></script>
+    <script src="elements/services/mouse.js"></script>
+    <script src="elements/services/query.js"></script>
+    <link rel="import" href="elements/focus-group.html"/>
+    <!--<link rel="import" href="elements/focus-manager.html"/>-->
+    <link rel="import" href="elements/focus-highlight.html"/>
+</head>
+<body>
+
+<focus-group focus-group-head="stop" focus-group-tail="loop">
+
+    <!--<a id="a" href="#" style="display: none">Was hidden</a>-->
+
+    <a href="#" focus-index="3">Link 3</a>
+    <a href="#" focus-index="2">Link 2</a>
+    <a href="#" focus-index="1" focus-element="autofocus">Link 1</a>
+
+    <focus-group>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+        <a href="#">Link 6</a>
+    </focus-group>
+
+</focus-group>
+
+<focus-highlight class="focus-highlight"></focus-highlight>
+
+</body>
+</html>
